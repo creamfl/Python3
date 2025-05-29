@@ -1,1 +1,13 @@
 https://docs.google.com/document/d/1yJ4gkr9lfUMriol909s7C7mRZ6SQMKSg-e0uLVtTB7E/edit?usp=sharing
+
+Apply the Migrations:
+This is the crucial step to create the database. Run the following command:
+
+Bash
+
+dotnet ef database update --project CarRental.Data --startup-project CarRental.Api
+Or, if using Package Manager Console in Visual Studio:
+
+PowerShell
+
+Update-Database -Project CarRental.Data -StartupProject CarRental.Api
